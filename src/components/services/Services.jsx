@@ -42,20 +42,20 @@ const services = [
   {
     id: 1,
     img: "/service1.png",
-    title: "Web Development",
-    counter: 35,
+    title: "Web Applications",
+    counter: "End-to-end MERN stack development for startups and enterprises.",
   },
   {
     id: 2,
     img: "/service2.png",
-    title: "Web Development",
-    counter: 25,
+    title: "Automation & Scripting",
+    counter: "Using Python to automate complex tasks and streamline workflows.",
   },
   {
     id: 3,
     img: "/service3.png",
-    title: "Web Development",
-    counter: 45,
+    title: "Database Management",
+    counter: "Designing scalable data architectures using MongoDB and SQL databases.",
   },
 ]
 const Services = () => {
@@ -74,22 +74,22 @@ const Services = () => {
               </div>
               <div className="serviceInfo">
                 <h2>{service.title}</h2>
-                <h3>{service.counter} Projects</h3>
+                <h3>{service.counter}</h3>
               </div>
             </motion.div>
           )
           )}
         </motion.div>
         <div className="counterList">
-          <Counter from={0} to={104} text="Text Completed" />
-          <Counter from={0} to={72} text="Happy Clients" />
+          <Counter from={0} to={10} text="Projects Completed" />
+          <Counter from={0} to={8} text="Happy Clients" />
         </div>
       </div>
       <div className="sSection right">
         {currentServiceId === 1 ? (
           <MacModelContainer />
         ) : currentServiceId === 2 ? (
-          <ConsoleModelContainer />
+          <MacModelContainer />
 
         ) : (
           <CupModelContainer />
