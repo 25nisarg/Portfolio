@@ -46,11 +46,11 @@ const Hero = () => {
           className='hTitle'>Hey There,<br /><span>I'm Nisarg!</span></motion.h1>
         <motion.div variants={awardVariant} initial="initial" animate="animate" className="awards">
           <motion.h2 variants={awardVariant} >FullStack Developer</motion.h2>
-          <motion.p variants={awardVariant} >Lorem ipsum dolor sit amet consectetur, adipisicing elit. </motion.p>
+          <motion.p variants={awardVariant} >I build scalable web applications that bridge the gap between elegant design and robust engineering. Specializing in high-performance solutions from database to deployment.</motion.p>
           <motion.div variants={awardVariant} className="awardlist">
-            <motion.img variants={awardVariant} src="./award1.png" alt="" />
+            {/* <motion.img variants={awardVariant} src="./award1.png" alt="" />
             <motion.img variants={awardVariant} src="./award2.png" alt="" />
-            <motion.img variants={awardVariant} src="./award3.png" alt="" />
+            <motion.img variants={awardVariant} src="./award3.png" alt="" /> */}
           </motion.div>
         </motion.div>
         {/* {Scroll Svg} */}
@@ -81,14 +81,14 @@ const Hero = () => {
       <div className="hSection right">
         {/* {Follow Component} */}
         <motion.div variants={followVariant} initial="initial" animate="animate" className="follow">
+          <motion.a variants={followVariant} href="https://www.linkedin.com/in/nisargm25/">
+            <img src="/linkedin.png" alt="" />
+          </motion.a>
+          <motion.a variants={followVariant} href="https://github.com/25nisarg">
+            <img src="/github.png" alt="" />
+          </motion.a>
           <motion.a variants={followVariant} href="/">
             <img src="/instagram.png" alt="" />
-          </motion.a>
-          <motion.a variants={followVariant} href="/">
-            <img src="/youtube.png" alt="" />
-          </motion.a>
-          <motion.a variants={followVariant} href="/">
-            <img src="/facebook.png" alt="" />
           </motion.a>
           <motion.div variants={followVariant} className="followTextContainer">
             <div className="followText">

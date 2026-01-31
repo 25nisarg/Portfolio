@@ -10,9 +10,9 @@ const Speech = () => {
                     sequence={[
                         1000,
                         // Same substring at the start will only be typed out once, initially
-                        'Same substring at the start will only be typed out once, initially',
+                        'Crafting MERN applications.',
                         1000, // wait 1s before replacing "Mice" with "Hamsters"
-                        'Lorem ipsum dolor sit amet.',
+                        'Python for backend & data.',
                         1000
                     ]}
                     wrapper="span"
